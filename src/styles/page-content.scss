@@ -1,0 +1,47 @@
+@import '../styles/general-style.scss';
+
+.content-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 213px;
+}
+
+.search-container {
+    width: 98%;
+    height: 56px;
+    background: #F4F4F4;
+    margin: auto;
+    border-radius: 10px;
+    padding: 0px 12px;
+    align-items: center;
+    display: flex;
+
+
+    form {
+        width: 100%;
+
+        button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: $font-color;
+            font-size:21px;
+            margin-right: 14px;
+            opacity: 0.6;
+        }
+
+        input {
+            border: none;
+            background-color: transparent;
+            font-family: $font;
+            outline: none;
+            opacity: 0.6;
+            width: 95%;
+            font-family:$font;
+            color: $font-color;
+            font-size:16px;
+        }
+    }
+
+}

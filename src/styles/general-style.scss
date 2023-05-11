@@ -1,0 +1,11 @@
+$blue: #316099;
+$font:'Open Sans', sans-serif;
+$font-color: #1F3F68;
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+}
+.white-content {
+    background: #e4e4e4;
+  }
