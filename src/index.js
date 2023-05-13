@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './styles/general-style.scss'
 import reportWebVitals from './reportWebVitals';
-import ThemeContextWrapper from './theme-context/themeContextWrapper';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <ThemeContextWrapper>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>{' '}
-  </ThemeContextWrapper>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root'),
 );
 

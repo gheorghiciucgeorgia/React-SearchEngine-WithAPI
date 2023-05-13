@@ -26,7 +26,7 @@
             background-color: transparent;
             cursor: pointer;
             color: $font-color;
-            font-size:21px;
+            font-size: 21px;
             margin-right: 14px;
             opacity: 0.6;
         }
@@ -38,10 +38,381 @@
             outline: none;
             opacity: 0.6;
             width: 95%;
-            font-family:$font;
+            font-family: $font;
             color: $font-color;
-            font-size:16px;
+            font-size: 16px;
+        }
+    }
+}
+
+.content-list {
+    margin-top: 100px;
+
+    .subtitle {
+        font-family: inherit;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #356EAD;
+    }
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 50px;
+        border: none;
+
+        .img-card {
+            width: 100%;
+            justify-content: space-between;
+
+            button {
+                border: none;
+                background-color: transparent;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .card-body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .title {
+                font-family: $font2;
+                font-size: 48px;
+                text-align: center;
+                color: #1F3F68;
+            }
+
+            .text {
+                font-family: $font3;
+                font-size: 16px;
+                text-align: left;
+                color: #000000;
+            }
+
+            .card-footer {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: self-end;
+                border: none;
+                background-color: transparent;
+
+                .by {
+                    display: flex;
+                    font-family: $font;
+                    width: 50%;
+                    color: #1F3F68;
+                    flex-direction: column;
+
+                    .user {
+                        font-family: $font3;
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.04em;
+                        color: #1F3F68;
+                    }
+
+                    .social {
+                        display: flex;
+                        justify-content: space-between;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: 0.04em;
+                        color: #1F3F68;
+                        opacity: 0.4;
+                    }
+                }
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    padding-bottom: 20px;
+                    color: #356EAD;
+                    font-size: 18px;
+                }
+            }
+
+        }
+
+        .col {
+
+            width: 100%;
+
+        }
+
+    }
+}
+
+.edit {
+    .card {
+        margin-bottom: 50px;
+        border: none;
+    }
+
+    .img-card {
+        width: 100%;
+        justify-content: space-between;
+
+        button {
+            border: none;
+            background-color: transparent;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            font-family: $font2;
+            font-size: 48px;
+            text-align: center;
+            color: #1F3F68;
+        }
+
+        .text {
+            font-family: $font3;
+            font-size: 16px;
+            text-align: left;
+            color: #000000;
+        }
+
+        .card-footer {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: self-end;
+            border: none;
+            background-color: transparent;
+
+            .by {
+                display: flex;
+                font-family: $font;
+                width: 50%;
+                color: #1F3F68;
+                flex-direction: column;
+
+                .user {
+                    font-family: $font3;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.04em;
+                    color: #1F3F68;
+                }
+
+                .social {
+                    display: flex;
+                    justify-content: space-between;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.04em;
+                    color: #1F3F68;
+                    opacity: 0.4;
+                }
+            }
+
+            button {
+                border: none;
+                background-color: transparent;
+                padding-bottom: 20px;
+                color: #356EAD;
+                font-size: 18px;
+            }
+        }
+    }
 }
+
+.see-all {
+    text-align: right;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    button {
+        border: none;
+        background-color: transparent;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #356EAD;
+        opacity: 0.8;
+        margin-bottom: 15px;
+    }
+}
+
+.title-all {
+    margin-top: 20px;
+    font-family: $font3;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.04em;
+    color: #356EAD;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.all-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px;
+    border: none;
+
+    .img-card {
+        width: 100%;
+        justify-content: space-between;
+
+        button {
+            border: none;
+            background-color: transparent;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            font-family: $font2;
+            font-size: 48px;
+            text-align: left;
+            color: #1F3F68;
+        }
+
+        .text {
+            font-family: $font3;
+            font-size: 16px;
+            text-align: left;
+            color: #000000;
+        }
+
+        .card-footer {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: self-end;
+            border: none;
+            background-color: transparent;
+
+            .by {
+                display: flex;
+                font-family: $font;
+                width: 50%;
+                color: #1F3F68;
+                flex-direction: column;
+
+                .user {
+                    font-family: $font3;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.04em;
+                    color: #1F3F68;
+                }
+
+                .social {
+                    display: flex;
+                    justify-content: space-between;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.04em;
+                    color: #1F3F68;
+                    opacity: 0.4;
+                }
+            }
+
+            button {
+                border: none;
+                background-color: transparent;
+                padding-bottom: 20px;
+                color: #356EAD;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    button {
+        font-family: $font3;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.04em;
+        color: #356EAD;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.modal-body {
+    width: 100%;
+}
+
+.bookmark-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    .bookmark-items-header{
+        margin-bottom:50px;
+        font-family:$font;
+        font-size:20px;
+        color:#1F3F68;
+        text-transform: uppercase;
+
+    }
+    .bookmark-items-component {
+        display: flex;
+        width: 100%;
+    }
+}
+
