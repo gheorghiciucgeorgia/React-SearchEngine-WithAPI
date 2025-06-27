@@ -18,7 +18,7 @@ function PopularArticles() {
 		const pixabayApi = async () => {
 			if (search === '') return
 
-			const key = '36306082-a5c34ad961d92290a4d04a55e'
+			const key = 'PERSONAL KEY'
 			const url = `https://pixabay.com/api/?key=${key}&q=${search}&image_type=photo&order=popular`
 
 			const response = await fetch(url)
